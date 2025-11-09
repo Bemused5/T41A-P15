@@ -50,9 +50,13 @@ jobs:
       run: |
         PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 02_insert_data.sql      
 
-    - name: Create views
+    - name: Create functions 
       run: |
-        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 03_create_views.sql          
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 03_ejercicio_1.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 04_ejercicio_2.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 05_ejercicio_3.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 06_ejercicio_4.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 07_ejercicio_5.sql
         
     - name: Run tests
       run: |
