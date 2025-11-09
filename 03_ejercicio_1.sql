@@ -1,7 +1,3 @@
--- 1) Crear una función que calcule el descuento aplicado a un producto.
--- Parámetros: precio original, porcentaje de descuento (0..100)
--- Retorna: precio final redondeado a 2 decimales
-
 CREATE OR REPLACE FUNCTION calcular_precio_descuento(precio NUMERIC, porcentaje NUMERIC)
 RETURNS NUMERIC AS $$
 DECLARE
